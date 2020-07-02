@@ -4,8 +4,11 @@
 	"version": "0.1",
 	"content_scripts": [
 		{
-			"js": ["content.js"],
-			"matches": ["https://mail.google.com/*", "http://mail.google.com/*"]
+			"js": ["dummy.js"],
+			"matches": ["<all_urls>"]
 		}
-	]
+	],
+	"background": {
+		"scripts": ["content.js"]
+	}
 }
