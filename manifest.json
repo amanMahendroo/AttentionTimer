@@ -10,5 +10,9 @@
 	],
 	"background": {
 		"scripts": ["content.js"]
+	},
+	"permissions": ["declarativeContent", "storage"],
+	"page_action": {
+		"default_popup": "content.html"
 	}
 }
