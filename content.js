@@ -1,3 +1,12 @@
+chrome.runtime.onInstalled.addListener(function() {
+	chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+		chrome.declarativeContent.onPageChanged.addRules([{
+			conditions: [],
+			actions: [new chrome.declarativeContent.ShowPageAction()]
+		}]);
+	});
+});
+
 let t0 = new Date()
 let attention = 20
 let pause = 5
